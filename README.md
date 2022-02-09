@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-A demo project that demonstrates foldable dual devices with Jetpack WindowManager.<br>
+A foldable chat Android demonstrates adaptive and responsive UIs with Jetpack WindowManager API.<br>
   <img src="https://user-images.githubusercontent.com/24237865/147445558-c749acd6-28aa-40c6-8e37-2a1121a9c165.png" />
 </p>
 
