@@ -36,7 +36,7 @@ Add the below dependencies to your `build.gradle` file.
 
 ```gradle
 dependencies {
-    implementation "androidx.window:window:1.0.0-rc01"
+    implementation "androidx.window:window:1.0.0"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
 }
 ```
