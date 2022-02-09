@@ -41,8 +41,11 @@ dependencies {
 }
 ```
 
+<img align="right" width="15%" src="https://user-images.githubusercontent.com/24237865/149445065-47c2506d-a738-4fb2-b4fb-eb6841b9e202.png" />
+
 ## WindowManager Example
-[WindowManager Example](https://github.com/GetStream/foldable-android-example/tree/main/windowmanager-example) module shows how to calculate the screen size and determine device postures with Jetpack WindowManager. You can also refer to the links below for additional help:
+[WindowManager Example](https://github.com/GetStream/foldable-chat-android/tree/main/windowmanager-example) module shows how to calculate the screen size and determine device postures with Jetpack WindowManager. You can also refer to the links below for additional help:
+- [Exploring Jetpack WindowManager for Foldable Devices](https://getstream.io/blog/jetpack-windowmanager-foldable/)
 - [Support foldable and dual-screen devices with Jetpack WindowManager](https://developer.android.com/codelabs/android-window-manager-dual-screen-foldables#2)
 - [Unbundling the WindowManager](https://medium.com/androiddevelopers/unbundling-the-windowmanager-fa060adb3ce9)
 - [Migrate your UI to responsive layouts](https://developer.android.com/guide/topics/large-screens/migrate-to-responsive-layouts)   
@@ -50,21 +53,39 @@ dependencies {
 ### Preview
 ![example](https://user-images.githubusercontent.com/24237865/147902922-9c790bd6-4feb-420a-a8e1-52082662c779.png)
 
+<a href="https://getstream.io/tutorials/android-chat/">
+<img src="https://user-images.githubusercontent.com/24237865/138428440-b92e5fb7-89f8-41aa-96b1-71a5486c5849.png" align="right" width="12%"/></a>
+
 ## WindowManager Chat
-[WindowManager Chat](https://github.com/GetStream/foldable-android-example/tree/main/windowmanager-chat) module demonstrates how to build responsive chat UIs with XML layout with [Stream Chat SDK](https://getstream.io/tutorials/android-chat/). You can also refer to the links below for additional help:
+[WindowManager Chat](https://github.com/GetStream/foldable-chat-android/tree/main/windowmanager-chat) module demonstrates how to build responsive chat UIs with XML layout with [Stream Chat SDK](https://getstream.io/tutorials/android-chat/). You can also refer to the links below for additional help:
 - [Exploring Jetpack WindowManager to Support Foldable Devices]()
 - [Android Chat Messaging Tutorial](https://getstream.io/tutorials/android-chat/)
 
 ### Preview
 ![example](https://user-images.githubusercontent.com/24237865/148728601-85ab2f45-fc0b-45a3-9bc4-e39207b6a552.png)
 
+<img align="right" width="15%" src="https://user-images.githubusercontent.com/24237865/149444862-961adb83-da2a-4179-9c27-37edb2f982f4.png">
+
 ## WindowManager Chat Compose
-[WindowManager Chat Compose](https://github.com/GetStream/foldable-android-example/tree/main/windowmanager-chat-compose) module demonstrates how to build responsive chat UIs with [Stream Jetpack Compose SDK](https://getstream.io/chat/compose/tutorial/). You can also refer to the links below for additional help:
+[WindowManager Chat Compose](https://github.com/GetStream/foldable-chat-android/tree/main/windowmanager-chat-compose) module demonstrates how to build responsive chat UIs with [Stream Jetpack Compose SDK](https://getstream.io/chat/compose/tutorial/). You can also refer to the links below for additional help:
 - [Exploring Jetpack WindowManager to Support Foldable Devices]()
 - [Compose Chat Messaging Tutorial](https://getstream.io/chat/compose/tutorial/)
 
 ### Preview
 ![showcase](https://user-images.githubusercontent.com/24237865/147902734-a395261f-d2e4-4151-a2ae-53cbd0964355.png)
+
+## Butterfly
+
+<a align="center">
+  <img src="https://user-images.githubusercontent.com/24237865/150674436-d2713bf0-da35-4b75-8629-5c83d8500cd7.png" width="65%" align="center" />
+</a>
+
+If you're looking for useful APIs for Jetpack WindowManager, check out the [Butterfly](https://github.com/getStream/butterfly). The Butterfly helps you to build adaptive and responsive UIs for Android with Jetpack WindowManager. Also, it supports useful functions for Jetpack Compose and LiveData integration.
+
+## Find this library useful? ❤️
+
+Support it by joining __[stargazers](https://github.com/getStream/foldable-chat-android/stargazers)__ for this repository. ⭐️ <br>
+Also, follow **[Stream](https://twitter.com/getstream_io)** on Twitter for our next creations!
 
 # License
 ```xml
