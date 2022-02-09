@@ -14,6 +14,11 @@ A foldable chat Android demonstrates adaptive and responsive UIs with Jetpack Wi
 ## Overview
 This demo project demonstrates dual-screen devices are portable devices with two symmetric screens that work together in unique ways to provide productivity in a flexible form factor. For more details, you can check it out [Introduction to dual-screen devices](https://docs.microsoft.com/en-us/dual-screen/introduction).
 
+## Learn More about WindowManager
+If you would like to learn more about the WindowManager API, check out the resources below:
+-  [Exploring Jetpack WindowManager for Foldable Devices](https://getstream.io/blog/jetpack-windowmanager-foldable/).
+-  [Youtube Tutorial - Exploring Jetpack WindowManager to Support Foldable Devices](https://www.youtube.com/watch?v=6NHs0n8wNsA)
+
 ## Pre-requisites
 - Android SDK 31
 - [Android Studio Arctic Fox](https://developer.android.com/studio) or higher
