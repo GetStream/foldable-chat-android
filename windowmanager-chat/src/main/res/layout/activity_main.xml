@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="windowSize"
+            type="io.getstream.example.windowmanager.chat.util.WindowSize" />
+
+        <variable
+            name="cid"
+            type="String" />
+
+        <import type="io.getstream.example.windowmanager.chat.util.WindowSize" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity">
+
+        <io.getstream.chat.android.ui.channel.list.header.ChannelListHeaderView
+            android:id="@+id/channelListHeaderView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/messageListLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:paddingHorizontal="@{windowSize instanceof WindowSize.Expanded ? 30 : 0}"
+            tools:background="@color/purple_200"
+            tools:layout_height="56dp" />
+
+        <io.getstream.chat.android.ui.channel.list.ChannelListView
+            android:id="@+id/channelListView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/channelListHeaderView"
+            app:layout_constraintStart_toStartOf="@id/channelListHeaderView"
+            app:layout_constraintTop_toBottomOf="@id/channelListHeaderView"
+            app:paddingHorizontal="@{windowSize instanceof WindowSize.Expanded ? 30 : 0}"
+            app:streamUiBackgroundLayoutColor="@color/stream_ui_white"
+            app:streamUiChannelListBackgroundColor="@color/stream_ui_white"
+            app:streamUiChannelOptionsEnabled="true"
+            app:streamUiChannelTitleTextSize="19sp"
+            app:streamUiLastMessageTextSize="14sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/messageListLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:gone="@{!(windowSize instanceof WindowSize.Expanded)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/channelListHeaderView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:paddingHorizontal="@{windowSize instanceof WindowSize.Expanded ? 30 : 0}">
+
+            <io.getstream.chat.android.ui.message.list.header.MessageListHeaderView
+                android:id="@+id/messageListHeaderView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:gone="@{cid == null}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <io.getstream.chat.android.ui.message.list.MessageListView
+                android:id="@+id/messageListView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:clipToPadding="false"
+                app:gone="@{cid == null}"
+                app:layout_constraintBottom_toTopOf="@+id/messageInputView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/messageListHeaderView"
+                app:streamUiFlagMessageConfirmationEnabled="true"
+                app:streamUiMessageTextColorDateSeparator="@color/white"
+                app:streamUiMessageTextSizeUserName="15sp"
+                app:streamUiMessageTextStyleUserName="bold"
+                app:streamUiMuteUserEnabled="false"
+                app:streamUiPinMessageEnabled="true" />
+
+            <io.getstream.chat.android.ui.message.input.MessageInputView
+                android:id="@+id/messageInputView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:gone="@{cid == null}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/placeHolder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/search_no_results"
+                android:textColor="@color/stream_ui_black"
+                android:textSize="18sp"
+                app:gone="@{cid != null}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
