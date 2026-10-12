@@ -1,3 +1,5 @@
+> **This repository is archived and no longer maintained.** For a current alternative, see [the sample apps in stream-chat-android](https://github.com/GetStream/stream-chat-android).
+
 <h1 align="center"> Foldable Chat Android </h1>
 
 <p align="center">
